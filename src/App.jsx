@@ -3,12 +3,17 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import CardResident from './components/CardResident'
 import LocationInfo from './components/LocationInfo'
+import Pagination from './components/Pagination'
+import rickAndMortyLogo from './img/logo_2.png'
 
 
 function App() {
 
   const [location, setLocation] = useState()
   const [searchInput, setSearchInput] = useState("")
+  const [page, setPage] = useState(1)
+  const [perPage, setPerPage] = useState(4)
+  
 
   useEffect(() => {
     let numberLocation
@@ -35,11 +40,17 @@ function App() {
 
   console.log(searchInput)
 
+  // por pagina
+
+  const maximo =  perPage
+
+  // console.log(maximo)
+
 
   return (
     <div className="App">
       <section className='conteiner'>
-        <img  className='conteiner_img' src="./src/img/logo_2.png" alt="ricky and Morty" />
+        <img  className='conteiner_img' src={rickAndMortyLogo} alt="ricky and Morty" />
       <form onSubmit={handleSubmit}> 
         <input id='search' type="text" placeholder='Characters Name'/>
         <button><strong>Search</strong></button>
@@ -48,6 +59,10 @@ function App() {
       </section>      
       <div className='residents'>
         {
+          location?.residents.slice((page-1)*perPage,(page-1)*perPage+perPage)
+          
+        };
+        {
           location?.residents.map(url => (
             <CardResident
               key={url}
@@ -55,8 +70,8 @@ function App() {
             />
           ))
         }
-
       </div>
+      <Pagination page={page} setPage={setPage} maximo={maximo}/>
     </div>
   )
 }
