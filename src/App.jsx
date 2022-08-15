@@ -59,17 +59,21 @@ function App() {
       </section>      
       <div className='residents'>
         {
-          location?.residents.slice((page-1)*perPage,(page-1)*perPage+perPage)
-          
+          location?.residents.slice((page-1)*perPage,(page-1)*perPage+(perPage)).map(url => (
+            <CardResident
+              key={url}
+              url={url}
+            />
+          ))     
         };
-        {
+        {/* {
           location?.residents.map(url => (
             <CardResident
               key={url}
               url={url}
             />
           ))
-        }
+        } */}
       </div>
       <Pagination page={page} setPage={setPage} maximo={maximo}/>
     </div>

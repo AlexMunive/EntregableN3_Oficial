@@ -116,6 +116,7 @@ ul{
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
 }
 .card:hover{
     transform: scale(1.03);
@@ -164,46 +165,29 @@ h5{
     font-family:cursive;
     color: rgb(6, 26, 14);
     font-size: 17px;
-    
+   left: -5px;
+}
+.card__status {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    margin-top: 30px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    left: 5px;
 }
 .Alive {
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    margin-top: 30px;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
 	background: #48ff00;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
 }
 .Dead {
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    margin-top: 30px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
 	background: #ff0000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
 }
 .unknown {
-    background-color: rgba(255, 255, 255, 0.4);
-    position: absolute;
-    margin-top: 30px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
 	background: #afafaf;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
 }
 .hr_line{
    background-color:rgb(6, 26, 14);

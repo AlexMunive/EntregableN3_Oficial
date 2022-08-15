@@ -9,7 +9,7 @@ const CardResident = ({url}) => {
     <article className='card'>
       <header>
         <div>
-          <div className={`${resident?.status}`}>
+          <div className={`card__status ${resident?.status}`}>
           <h5>{`${resident?.status}`}</h5>
           </div>
         </div> 
