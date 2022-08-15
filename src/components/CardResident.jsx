@@ -13,7 +13,7 @@ const CardResident = ({url}) => {
           <h5>{`${resident?.status}`}</h5>
           </div>
         </div> 
-        <img src={resident?.image} alt={`image of${resident?.name}`} />       
+        <img className='card_img' src={resident?.image} alt={`image of${resident?.name}`} />       
       </header>
       <div>
         <h1>{`${resident?.name}`}</h1>

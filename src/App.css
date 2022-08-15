@@ -126,6 +126,7 @@ ul{
     border-radius: 20px;
     cursor: pointer;
     position: relative;
+    margin: 12px;
 }
 .card:hover{
     transform: scale(1.03);
@@ -143,14 +144,14 @@ ul{
 .residents{
     max-width: 800px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 20px;
+    /* gap: 20px; */
 
 }
 .App{
@@ -201,7 +202,7 @@ h5{
 .hr_line{
    background-color:rgb(6, 26, 14);
    height: 2px;
-   width: 280px;
+   width: 270px;
 }
 
 .btnA{
@@ -215,10 +216,13 @@ h5{
 
 .inputA{
     width: 30px;
-    height: 23px;
+    height: 22px;
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
+    color: rgb(0, 0, 0);
+    font-family:cursive;
+    font-size: 18px;
 }
 
 .page{
@@ -228,4 +232,17 @@ h5{
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+.text{
+    font-family:cursive;
+    font-size: 18px;
+    margin-right: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(199, 201, 202);
+    padding-bottom: 3px;   
+}
+.card_img{
+    min-width: 100%;
+    height: 280px;
 }
