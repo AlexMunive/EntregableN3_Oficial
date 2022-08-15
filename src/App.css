@@ -101,7 +101,7 @@ ul{
 .conteiner_img{
     width: 300px;
     background-position: center center;
-    position: center;   
+    position: normal;   
 }
 .conteiner_img:hover{
     transform: scale(1.08);
