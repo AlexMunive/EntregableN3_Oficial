@@ -19,9 +19,9 @@ const CardResident = ({url}) => {
         <h1>{`${resident?.name}`}</h1>
         <hr className='hr_line'/>
         <ul>
-          <h4><strong>Species: </strong>{`${resident?.species}`}</h4>
-          <h4><strong>Origin: </strong>{`${resident?.origin.name}`}</h4>
-          <h4><strong>Eppisodes where appear: </strong>{`${resident?.episode.length}`}</h4>         
+          <h4><strong className='data'>Species: </strong>{`${resident?.species}`}</h4>
+          <h4><strong className='data'>Origin: </strong>{`${resident?.origin.name}`}</h4>
+          <h4><strong className='data'>Eppisodes where appear: </strong>{`${resident?.episode.length}`}</h4>         
         </ul>
 
       </div>

@@ -13,7 +13,7 @@ h1{
     font-family:cursive;
     padding-left: 10px;
     font-size: 20px;
-    color: rgb(6, 26, 14);
+    color: rgb(27, 102, 57);
 }
 th,tr{
     padding-right: 20px;
@@ -62,7 +62,7 @@ i{
 }
 h3{
     font-family:cursive;
-    color: rgb(6, 26, 14);
+    color: rgb(30, 53, 38);
     margin: 0;
     padding: 10px;
     cursor:context-menu;
@@ -74,8 +74,10 @@ h4{
     font-family:cursive;
     margin-top: 12px;
     margin-bottom: 10px;
+    color: rgb(77, 78, 78);
 }
 strong{
+    font-size: 22px;
     font-family:cursive;
     color: rgb(6, 26, 14);
     /* font-style: italic; */
@@ -83,6 +85,13 @@ strong{
 }
 ul{
     padding-left: 30px;
+}
+.btnB{
+    font-family:cursive;
+    color: rgb(6, 26, 14);
+}
+.data{
+    font-size: 18px;
 }
 
 .conteiner{
@@ -195,14 +204,28 @@ h5{
    width: 280px;
 }
 
-
-
-
 .btnA{
  font-size: 20PX;
  width: 35px;
+ color:rgb(16, 133, 168);
+}
+.btnA:hover{
+    transform: scale(1.05);
 }
 
 .inputA{
     width: 30px;
+    height: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.page{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }

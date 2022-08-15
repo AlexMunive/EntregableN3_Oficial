@@ -53,10 +53,11 @@ function App() {
         <img  className='conteiner_img' src={rickAndMortyLogo} alt="ricky and Morty" />
       <form onSubmit={handleSubmit}> 
         <input id='search' type="text" placeholder='Characters Name'/>
-        <button><strong>Search</strong></button>
+        <button><span className='btnB'>Search</span></button>
       </form>
       <LocationInfo location={location} />
-      </section>      
+      </section>  
+      <Pagination page={page} setPage={setPage} maximo={maximo}/>    
       <div className='residents'>
         {
           location?.residents.slice((page-1)*perPage,(page-1)*perPage+(perPage)).map(url => (
@@ -66,8 +67,7 @@ function App() {
             />
           ))     
         };
-      </div>
-      <Pagination page={page} setPage={setPage} maximo={maximo}/>
+      </div> 
     </div>
   )
 }
