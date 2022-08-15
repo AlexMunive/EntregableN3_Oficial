@@ -42,7 +42,7 @@ function App() {
 
   // por pagina
 
-  const maximo =  perPage
+  const maximo =  Math.ceil(location?.residents.length / perPage)
 
   // console.log(maximo)
 
@@ -66,14 +66,6 @@ function App() {
             />
           ))     
         };
-        {/* {
-          location?.residents.map(url => (
-            <CardResident
-              key={url}
-              url={url}
-            />
-          ))
-        } */}
       </div>
       <Pagination page={page} setPage={setPage} maximo={maximo}/>
     </div>
