@@ -39,11 +39,9 @@ function App() {
   return (
     <div className="App">
       <section className='conteiner'>
-        <div>
-        <img  className='conteiner_img'  src="./src/img/logo_2.png" alt="ricky and Morty" />
-        </div>
+        <img  className='conteiner_img' src="./src/img/logo_2.png" alt="ricky and Morty" />
       <form onSubmit={handleSubmit}> 
-        <input id='search' type="text" placeholder='Characters Name' />
+        <input id='search' type="text" placeholder='Characters Name'/>
         <button><strong>Search</strong></button>
       </form>
       <LocationInfo location={location} />
