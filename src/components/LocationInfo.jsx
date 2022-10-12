@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const LocationInfo = ({ location }) => {
-  console.log(location)
+  // console.log(location)
 
   return (
     <article>
